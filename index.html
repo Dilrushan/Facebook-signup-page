@@ -14,7 +14,7 @@
 <body>
     <div class="main-div">
         <h1 id="logo">facebook</h1>
-        <form>
+        <form id="signup">
             <div class="signup-form">
                 <div class="form-heading">
                     <h2>Create a new account</h2>
@@ -22,32 +22,38 @@
                 </div>
                 <div class="input-fields">
                     <div class="half-width">
-                        <input type="text" placeholder="First name" />
+                        <input type="text" placeholder="First name" name="fname"/>
                     </div>
                     <div class="half-width">
-                        <input type="text" placeholder="Surname" />
+                        <input type="text" placeholder="Surname" name="sname"/>
                     </div>
                     <div class="full-width">
-                        <input type="number" placeholder="Mobile number" />
+                        <input type="number" placeholder="Mobile number" name="mobile"/>
                     </div>
                     <div class="full-width">
-                        <input type="password" placeholder="New password" />
+                        <input type="password" placeholder="New password" name="password"/>
                     </div>
                     <label>Date of birth</label>
                     <div class="dob-div">
                         <div class="quat-width">
-                            <select>
-                                <option>1</option>
+                            <select name="day">
+                                <option value="">choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
                             </select>
                         </div>
                         <div class="quat-width">
-                            <select>
-                                <option>1</option>
+                            <select name="month">
+                                <option value="">choose</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
                             </select>
                         </div>
                         <div class="quat-width">
-                            <select>
-                                <option>1</option>
+                            <select name="year">
+                                <option value="">choose</option>
+                                <option value="1900">1900</option>
+                                <option value="2025">2025</option>
                             </select>
                         </div>
                     </div>
@@ -88,5 +94,7 @@
         </form>
     </div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+<script src="/facebook-signup/js/validation.js"></script>
 </html>
